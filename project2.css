@@ -1,0 +1,360 @@
+header{
+    height: 50px;
+    width: 100%;
+    background-color:#0b222f;
+    border-bottom:5px groove #c7e0ee;
+    
+}
+/* Brand div */
+#brand {
+    height:50px;
+    width:30%;
+    float: left;
+    margin-left: 2%;
+}
+#brand h1{
+    font-family:'Times New Roman', Times, serif;
+    color: rgb(176, 213, 245);
+    font-size: 35px; 
+    margin-top: 0%;
+    text-shadow: 3px 2px 4px;
+}
+/* login div */
+#log{
+    height:50px;
+    width:30%;
+    float: right;
+    margin-right: 4%;
+    
+   }
+.logbutton{
+    font-size: 20px !important;
+    background-color:#0b222f;
+    color:rgb(255, 255, 255) !important;
+    font-family:'Times New Roman', Times, serif;
+    padding:1px 2px 1px !important;
+    float: right;
+    margin-top: 1%;
+    margin-left: 2%;
+}
+
+/* Background image div */
+
+#imgdiv{
+height:450px;
+width:100%;
+background-image: url(images/Bar.jpg);
+background-repeat: no-repeat;
+background-size: 100% 100%;
+
+}
+
+/* Menubar div */
+#menubar{
+    height:50px;
+    margin-left: 40%;
+}
+/* Search div */
+#search{
+    height:50px;
+    width:40%;
+    color: #ffffff;
+    float: left;
+    margin-left: -4%;
+}
+
+#search label{
+    margin-top: 10px;
+    
+} 
+#inputheight{
+    height: 60%;
+    color: black;
+}
+
+
+#menu {
+    height:50px;
+    width:40%;
+    float: left;
+    margin-left: 8%;
+    margin-top: 1%;
+}
+#menu a{
+    text-decoration: none !important;
+    color: #ffffff;
+    font-size: 20px;
+    margin-top: 2%;
+    margin-left: 3%;
+    font-family:Times New Roman;
+}
+
+         /* Logo Div  */
+#logocontainer{
+    height:250px;
+    width:33%;
+    margin-left: 2%;
+    margin-top: 3%;
+    float:left;
+    box-shadow: 10px 10px 10px #0b222f;
+}
+
+#logoup{
+  font-size: 50px;
+  font-family: 'Times New Roman', Times, serif;
+  color: #ffffff;
+  margin-top: 5%;
+  float:left;
+  text-shadow: 3px 4px 3px
+}
+#logomd{
+  font-size: 250px;
+  font-family: 'Times New Roman', Times, serif;
+  color: #ffffff;
+  float:left;
+  margin-top: -13%;
+  text-shadow: 8px 3px 16px
+}
+#logodn{
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffffff;
+    float:left;
+    margin-top: 34%;
+    text-shadow: 3px 4px 3px
+}
+           /* Text Div */
+#txtdiv{
+    height:100px;
+    width:50%;
+    margin-left: 4%;
+    margin-top: 2%;
+    float:left;
+    text-align: center;
+    
+   
+}
+#tagline {
+    font-size: 50px;
+    font-family:'Times New Roman', Times, serif;
+    text-shadow:  5px 4px 3px ;
+    text-shadow: #ffffff;
+    color: #061927;
+   
+}
+
+           /*     Container div */
+
+.cardcontainer{
+   /*height:450px;*/
+   width: 100%;
+   margin-top:2%;
+   /*background-color: #c04a4a; */
+   
+   float: left;
+   
+}
+.heading{
+    height:65px;
+    background-color: #04121b;
+}
+.marg{
+    margin-left:2%;
+    color:#ffffff;
+    font-family: 'Times New Roman', Times, serif;
+}
+.carddiv{
+   width:100%;
+   height:380px;
+   border: 1px solid #04121b;
+  float:left;
+  
+}
+.card{
+    width:20%;
+    height: 350px;
+    margin-left:4%;
+    margin-top:1%;
+    float:left;
+    border: 1px solid #04121b;
+    border-radius: 5%;
+}
+.cardimg{
+    width:100%;
+    height: 50%;
+}
+.imageset{
+    width:50% !important;
+    margin-left:25% !important ;
+}
+
+.cardimg img{
+    width:70%;
+    height: 90%;
+    margin-left:15%;
+    margin-top: 5%;
+}
+.cardtxt{
+    width:100%;
+    height: 35%;
+   
+}
+.ordernow {
+    height: 14%;
+    margin-top: -10%;
+    margin-left: 12%;
+}
+/*  .orderbtn{
+    margin-left:10%  
+}  */
+.headings{
+    width:90%;
+    margin-left:5%;
+   
+}
+.price{
+    color: #397a39;;
+}
+.ratings {
+    padding: 1px 2px 1px 2px !important;
+ 
+}
+
+
+.orders {
+    background-color:#04121b !important;
+    padding: 2px 3px 2px 3px !important;
+    margin-left:1%;
+    color:white !important;
+
+}
+.orders:hover{
+    transform:scale(1.1)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+      /*Footer Section */
+footer {
+    margin-top: 3%;
+    height: 230px;
+    width:100%;
+    background-color:  #0b222f;
+}
+#mainfoot{
+    height:80%;
+    width:100%;
+}
+   iframe{
+    margin-left:5%;
+    margin-top: 4%;
+   }
+
+#mapdiv{
+    height: 70%;
+    width: 25%;
+    float: left;
+  
+}
+.footdiv {
+    height: 30%;
+    width: 25%;
+    float: left;
+    
+}
+#contactdiv{
+    height: 40%;
+    width: 75%;
+    float: left;
+   /* border: 1px solid white; */
+}
+
+.txtmarg{
+    margin-top: 5%;
+    border-right: 2px solid white;
+}
+#boder{
+
+    border: none;
+}
+.txtmarg > a {
+    margin-top: 2%;
+    margin-left: 10%;
+    color: white !important;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    display:block;
+    text-decoration: none !important;
+}
+#contact{
+    margin-top: 1%;
+    margin-left: 1%;
+    height: 35%;
+    width: 49%;
+    /* border: 1px solid white; */
+    float: left;
+}
+#followus{
+    margin-top: 3%;
+    margin-left: 31%;
+    text-align:center;
+    color: white !important;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#contactus{
+    margin-top: 4%;
+    margin-left: -34%;
+    text-align:center;
+    color: white !important;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+#socialmedia{
+    margin-top: 1%;
+    height: 35%;
+    width: 49%;
+   /* border: 1px solid white; */
+    float: left;
+}
+#icons{
+    margin-left:55%;
+    margin-top:3%;
+    text-decoration: none !important;
+}
+.sociallogo {
+    height: 33px;
+    margin-left:2%;
+   
+}
+#mail{
+    margin-left:20%;
+    margin-top:3%;
+}
+#mail a{
+    text-decoration: none !important;
+    color: white !important;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+hr{
+     margin-top: -1% !important;
+    color: #ffffff;
+}
+#copyright{
+    color: #ffffff;
+    text-align: center;
+}
