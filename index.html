@@ -8,13 +8,33 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="coupon.js"></script>
+    <style>
+        body{
+          background-color: fff;
+          color:black
+        }
+        .mydark{
+          background-color: black;
+          color:white
+        }
+     </style>
+     <script>
+         function changeMode(){
+          let mybody=document.body;
+          mybody.classList.toggle('mydark')
+         }
+     </script>
 </head>
 
 <Header>
-    <div id="brand">
+           
+    <div class="brand">
         <h1><b>r Creators</b></h1>
     </div>
-
+    <!-- Light dark mode-->
+    <button onClick="changeMode()" id="mode"><span  class="glyphicon glyphicon-star"></span></button>
+   
     <div id="log">
         <button class="btn logbutton">Login</button>
         <button class="btn logbutton">Signup</button>
@@ -22,146 +42,89 @@
 </Header>
 
 <body>
-    <div id="imgdiv">
-        <div id="menubar">
-            <div id="menu">
-                <b><a href="#">Products</a></b>
-                <b><a href="#">Trending</a></b> 
-                <b><a href="#">Cart</a></b>
-            </div>
-            <div id="search">
-                <label class="labeltext"><input type="search" placeholder="Search Product Here"
-                   id="inputheight"/>Search</label>
-            </div>
+     <!--  Using coupon -->
+    <div id="coupon">
+        <button onclick="closeCoupon()"> &times;</button>
+        <div id="coupimg">
+            <img src="https://i.ibb.co/DVhJ1Zt/images-8.jpg"/>
         </div>
-        <div id=logocontainer>
-            <div><span id="logoup">We</span></div>
-            <div><span id="logomd">R</span></div>
-            <div><span id="logodn">Creators</span></div>
-        </div>
-        <div id="txtdiv">
-            <span id="tagline">Customize Your Phone</span>
+        
+        <div id="couptxt">
+           
+            <h3 class="offer">Offer applicable for all users</h3>
+            <p class="offer">
+                Flat 50% off on all mobile accesories, skins and covers  
+            </p>
+            <h4 class="offer">Limited period offer</h4>
+            <div>
+                <button href="#" class="btn btn-info deal">Grab Now</button><br/>
+            </div>
+            
+            <label>Coupon Code : RCR1190</label>
         </div>
     </div>
-
-    <!-- Container Div-->
-
-    <div class="container">
-        <!--  1st container-->
-
-        <div class="cardcontainer ">
-            <div class="heading">
-                <h2 class="marg">Mobile Skins</h2>
-                <h4 class="marg">New designs with reasonable price</h4>
-            </div>
-            <div class="carddiv">
-                <div class="card">
-                    <div class="cardimg">
-                        <a href="#"> <img src="https://i.ibb.co/SmZf8ck/heroes.jpg" alt="Marvel Skin"
-                                class="imageset" /></a>
-                    </div>
-                    <div class="cardtxt">
-                        <p class="headings">Marvel Heroes 3d Skin with best material</p>
-                        <span class="headings"><b>Rs. <del>250/-</del> 200/- <b class="price">(Rs. 50
-                                    off)</b></b></span>
-                    </div>
-                    <div class="ordernow">
-                        <p><button class="btn btn-success ratings">4.7 &star;</button></p>
-                        <span class="orderbtn">
-                            <button class="btn orders">Order Now</button>
-                            <button class="btn orders">See Details</button>
-                        </span>
-                    </div>
+    <div id="master">
+   
+        <div id="imgdiv">
+            <div id="menubar">
+                <div id="menu">
+                    <b><a href="#">Products</a></b>
+                    <b><a href="#">Trending</a></b>
+                    <b><a href="#">Cart</a></b>
                 </div>
-
-                <div class="card">
-                    <div class="cardimg">
-                        <a href="#"> <img src="https://i.ibb.co/84shXQD/messi.jpg" alt="Messi Skin"
-                                class="imageset" /></a>
-                    </div>
-                    <div class="cardtxt">
-                        <p class="headings">Messi Wallpaper with Acrylic Design</p>
-                        <span class="headings"><b>Rs. <del>250/-</del> 200/- <b class="price">(Rs. 50
-                                    off)</b></b></span>
-                    </div>
-                    <div class="ordernow">
-                        <p><button class="btn btn-success ratings">4.5 &star;</button></p>
-                        <span class="orderbtn">
-                            <button class="btn orders">Order Now</button>
-                            <button class="btn orders">See Details</button>
-                        </span>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="cardimg">
-                        <a href="#"> <img src="https://i.ibb.co/ww6J9GV/marvelskin.jpg" alt="Marvel Skin"
-                                class="imageset" /></a>
-                    </div>
-                    <div class="cardtxt">
-                        <p class="headings">Best of Marvel Collection at Lowest Price</p>
-                        <span class="headings"><b>Rs. <del>300/-</del> 200/- <b class="price">(33%
-                                    off)</b></b></span>
-                    </div>
-                    <div class="ordernow">
-                        <p><button class="btn btn-success ratings">4.6 &star;</button></p>
-                        <span class="orderbtn">
-                            <button class="btn orders">Order Now</button>
-                            <button class="btn orders">See Details</button>
-                        </span>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="cardimg">
-                        <a href="#"> <img src="https://i.ibb.co/8x7tNR6/skin2.jpg" alt="Design Skin" /></a>
-                    </div>
-                    <div class="cardtxt">
-                        <p class="headings">Desiner 3d Mobile Skin for all Mobile Phones</p>
-                        <span class="headings"><b>Rs. <del>300/-</del> 200/- <b class="price">(33%
-                                    off)</b></b></span>
-                    </div>
-                    <div class="ordernow">
-                        <p><button class="btn btn-success ratings">4.3 &star;</button></p>
-                        <span class="orderbtn">
-                            <button class="btn orders">Order Now</button>
-                            <button class="btn orders">See Details</button>
-                        </span>
-                    </div>
+                <div id="search">
+                    <label class="labeltext"><input type="search" placeholder="Search Product Here"
+                            id="inputheight" />Search</label>
                 </div>
             </div>
+            <div id=logocontainer>
+                <div><span id="logoup">We</span></div>
+                <div><span id="logomd">R</span></div>
+                <div><span id="logodn">Creators</span></div>
+            </div>
+            <div id="txtdiv">
+                <span id="tagline">Customize Your Phone</span>
+            </div>
+        </div>
 
+        <!-- Container Div-->
 
-            <!--  2nd container-->
+        <div class="container">
+            <!--  1st container-->
 
-            <div class="cardcontainer">
+            <div class="cardcontainer ">
                 <div class="heading">
-                    <h2 class="marg">Laptop Skins</h2>
-                    <h4 class="marg">Best quality prints at reasonable price</h4>
+                    <h2 class="marg">Mobile Skins</h2>
+                    <h4 class="marg">New designs with reasonable price</h4>
                 </div>
                 <div class="carddiv">
                     <div class="card">
                         <div class="cardimg">
-                            <img src="https://i.ibb.co/xH7HDFj/lap6.jpg" alt="Laptop Skin" />
+                            <a href="#"> <img src="https://i.ibb.co/SmZf8ck/heroes.jpg" alt="Marvel Skin"
+                                    class="imageset" /></a>
                         </div>
                         <div class="cardtxt">
-                            <p class="headings">DC printed skin available for Lenovo, Dell, Hp and other.</p>
-                            <span class="headings"><b>Rs. <del>450/-</del> 400/- <b class="price">(Rs. 50
+                            <p class="headings">Marvel Heroes 3d Skin with best material</p>
+                            <span class="headings"><b>Rs. <del>250/-</del> 200/- <b class="price">(Rs. 50
                                         off)</b></b></span>
                         </div>
                         <div class="ordernow">
-                            <p><button class="btn btn-success ratings">4.8 &star;</button></p>
+                            <p><button class="btn btn-success ratings">4.7 &star;</button></p>
                             <span class="orderbtn">
                                 <button class="btn orders">Order Now</button>
                                 <button class="btn orders">See Details</button>
                             </span>
                         </div>
                     </div>
+
                     <div class="card">
                         <div class="cardimg">
-                            <a href="#"> <img src="https://i.ibb.co/ZGZDtGg/lapp4.jpg" alt="Laptop Skin" /></a>
+                            <a href="#"> <img src="https://i.ibb.co/84shXQD/messi.jpg" alt="Messi Skin"
+                                    class="imageset" /></a>
                         </div>
                         <div class="cardtxt">
-                            <p class="headings">Marine picture skin for kids laptop</p>
-                            <span class="headings"><b>Rs. <del>450/-</del> 400/- <b class="price">(Rs. 50
+                            <p class="headings">Messi Wallpaper with Acrylic Design</p>
+                            <span class="headings"><b>Rs. <del>250/-</del> 200/- <b class="price">(Rs. 50
                                         off)</b></b></span>
                         </div>
                         <div class="ordernow">
@@ -174,11 +137,12 @@
                     </div>
                     <div class="card">
                         <div class="cardimg">
-                            <a href="#"> <img src="https://i.ibb.co/F6cqWfw/lap5.jpg" alt="Laptop Skin" /></a>
+                            <a href="#"> <img src="https://i.ibb.co/ww6J9GV/marvelskin.jpg" alt="Marvel Skin"
+                                    class="imageset" /></a>
                         </div>
                         <div class="cardtxt">
-                            <p class="headings">DC printed Joker skin available for Lenovo, Dell, Hp and other.</p>
-                            <span class="headings"><b>Rs. <del>400/-</del> 370/- <b class="price">(Rs. 30
+                            <p class="headings">Best of Marvel Collection at Lowest Price</p>
+                            <span class="headings"><b>Rs. <del>300/-</del> 200/- <b class="price">(33%
                                         off)</b></b></span>
                         </div>
                         <div class="ordernow">
@@ -191,62 +155,11 @@
                     </div>
                     <div class="card">
                         <div class="cardimg">
-                            <a href="#"> <img src="https://i.ibb.co/7Gr5F6v/lap3.jpg" alt="Laptop Skin" /></a>
+                            <a href="#"> <img src="https://i.ibb.co/8x7tNR6/skin2.jpg" alt="Design Skin" /></a>
                         </div>
                         <div class="cardtxt">
-                            <p class="headings">Acrylic 3d Printed Laptop skin at best price</p>
-                            <span class="headings"><b>Rs. <del>470/-</del> 420/- <b class="price">(Rs. 50
-                                        off)</b></b></span>
-                        </div>
-                        <div class="ordernow">
-                            <p><button class="btn btn-success ratings">4.1 &star;</button></p>
-                            <span class="orderbtn">
-                                <button class="btn orders">Order Now</button>
-                                <button class="btn orders">See Details</button>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-
-
-            <!--  3rd container-->
-
-            <div class="cardcontainer">
-                <div class="heading">
-                    <h2 class="marg">Mobiile Cases</h2>
-                    <h4 class="marg">Best quality prints at reasonable price</h4>
-                </div>
-                <div class="carddiv">
-                    <div class="card">
-                        <div class="cardimg">
-                            <img src="https://i.ibb.co/cDk2DNj/starback.jpg" alt="Starbucks Case" />
-                        </div>
-                        <div class="cardtxt">
-                            <p class="headings">Starbucks Logo Printed Colourful Pro i-phone 13 Series</p>
-                            <span class="headings"><b>Rs. <del>350/-</del> 300/- <b class="price">(Rs. 50
-                                        off)</b></b></span>
-                        </div>
-                        <div class="ordernow">
-                            <p><button class="btn btn-success ratings">4.8 &star;</button></p>
-                            <span class="orderbtn">
-                                <button class="btn orders">Order Now</button>
-                                <button class="btn orders">See Details</button>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="cardimg">
-                            <img src="https://i.ibb.co/sbRj1Hz/back2.jpg" alt="Rubber Case" />
-                        </div>
-                        <div class="cardtxt">
-                            <p class="headings">Smoke Back Case Mobile Cover Rubber Material</p>
-                            <span class="headings"><b>Rs. <del>150/-</del> 110/- <b class="price">(30%
+                            <p class="headings">Desiner 3d Mobile Skin for all Mobile Phones</p>
+                            <span class="headings"><b>Rs. <del>300/-</del> 200/- <b class="price">(33%
                                         off)</b></b></span>
                         </div>
                         <div class="ordernow">
@@ -257,127 +170,260 @@
                             </span>
                         </div>
                     </div>
+                </div>
 
 
-                    <div class="card">
-                        <div class="cardimg">
-                            <img src="https://i.ibb.co/ygn9YKt/back3.jpg" alt="Printed Case" />
-                        </div>
-                        <div class="cardtxt">
-                            <p class="headings">Printed Rubber Cases with all designs</p>
-                            <span class="headings"><b>Rs. <del>110/-</del> 90/- <b class="price">(Rs. 20
-                                        off)</b></b></span>
-                        </div>
-                        <div class="ordernow">
-                            <p><button class="btn btn-success ratings">3.9 &star;</button></p>
-                            <span class="orderbtn">
-                                <button class="btn orders">Order Now</button>
-                                <button class="btn orders">See Details</button>
-                            </span>
-                        </div>
+                <!--  2nd container-->
+
+                <div class="cardcontainer">
+                    <div class="heading">
+                        <h2 class="marg">Laptop Skins</h2>
+                        <h4 class="marg">Best quality prints at reasonable price</h4>
                     </div>
-                    <div class="card">
-                        <div class="cardimg">
-                            <img src="https://i.ibb.co/pLrtzHg/back4.jpg" alt="Cartoon Case" />
+                    <div class="carddiv">
+                        <div class="card">
+                            <div class="cardimg">
+                                <img src="https://i.ibb.co/xH7HDFj/lap6.jpg" alt="Laptop Skin" />
+                            </div>
+                            <div class="cardtxt">
+                                <p class="headings">DC printed skin available for Lenovo, Dell, Hp and other.</p>
+                                <span class="headings"><b>Rs. <del>450/-</del> 400/- <b class="price">(Rs. 50
+                                            off)</b></b></span>
+                            </div>
+                            <div class="ordernow">
+                                <p><button class="btn btn-success ratings">4.8 &star;</button></p>
+                                <span class="orderbtn">
+                                    <button class="btn orders">Order Now</button>
+                                    <button class="btn orders">See Details</button>
+                                </span>
+                            </div>
                         </div>
-                        <div class="cardtxt">
-                            <p class="headings">Funky Back Cases with Soft Rubber Material</p>
-                            <span class="headings"><b>Rs. 150/- </b></span>
+                        <div class="card">
+                            <div class="cardimg">
+                                <a href="#"> <img src="https://i.ibb.co/ZGZDtGg/lapp4.jpg" alt="Laptop Skin" /></a>
+                            </div>
+                            <div class="cardtxt">
+                                <p class="headings">Marine picture skin for kids laptop</p>
+                                <span class="headings"><b>Rs. <del>450/-</del> 400/- <b class="price">(Rs. 50
+                                            off)</b></b></span>
+                            </div>
+                            <div class="ordernow">
+                                <p><button class="btn btn-success ratings">4.5 &star;</button></p>
+                                <span class="orderbtn">
+                                    <button class="btn orders">Order Now</button>
+                                    <button class="btn orders">See Details</button>
+                                </span>
+                            </div>
                         </div>
-                        <div class="ordernow">
-                            <p><button class="btn btn-success ratings">3.7 &star;</button></p>
-                            <span class="orderbtn">
-                                <button class="btn orders">Order Now</button>
-                                <button class="btn orders">See Details</button>
-                            </span>
+                        <div class="card">
+                            <div class="cardimg">
+                                <a href="#"> <img src="https://i.ibb.co/F6cqWfw/lap5.jpg" alt="Laptop Skin" /></a>
+                            </div>
+                            <div class="cardtxt">
+                                <p class="headings">DC printed Joker skin available for Lenovo, Dell, Hp and other.</p>
+                                <span class="headings"><b>Rs. <del>400/-</del> 370/- <b class="price">(Rs. 30
+                                            off)</b></b></span>
+                            </div>
+                            <div class="ordernow">
+                                <p><button class="btn btn-success ratings">4.6 &star;</button></p>
+                                <span class="orderbtn">
+                                    <button class="btn orders">Order Now</button>
+                                    <button class="btn orders">See Details</button>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="cardimg">
+                                <a href="#"> <img src="https://i.ibb.co/7Gr5F6v/lap3.jpg" alt="Laptop Skin" /></a>
+                            </div>
+                            <div class="cardtxt">
+                                <p class="headings">Acrylic 3d Printed Laptop skin at best price</p>
+                                <span class="headings"><b>Rs. <del>470/-</del> 420/- <b class="price">(Rs. 50
+                                            off)</b></b></span>
+                            </div>
+                            <div class="ordernow">
+                                <p><button class="btn btn-success ratings">4.1 &star;</button></p>
+                                <span class="orderbtn">
+                                    <button class="btn orders">Order Now</button>
+                                    <button class="btn orders">See Details</button>
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+
+
+
+
+
+
+                <!--  3rd container-->
+
+                <div class="cardcontainer">
+                    <div class="heading">
+                        <h2 class="marg">Mobiile Cases</h2>
+                        <h4 class="marg">Best quality prints at reasonable price</h4>
+                    </div>
+                    <div class="carddiv">
+                        <div class="card">
+                            <div class="cardimg">
+                                <img src="https://i.ibb.co/cDk2DNj/starback.jpg" alt="Starbucks Case" />
+                            </div>
+                            <div class="cardtxt">
+                                <p class="headings">Starbucks Logo Printed Colourful Pro i-phone 13 Series</p>
+                                <span class="headings"><b>Rs. <del>350/-</del> 300/- <b class="price">(Rs. 50
+                                            off)</b></b></span>
+                            </div>
+                            <div class="ordernow">
+                                <p><button class="btn btn-success ratings">4.8 &star;</button></p>
+                                <span class="orderbtn">
+                                    <button class="btn orders">Order Now</button>
+                                    <button class="btn orders">See Details</button>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="cardimg">
+                                <img src="https://i.ibb.co/sbRj1Hz/back2.jpg" alt="Rubber Case" />
+                            </div>
+                            <div class="cardtxt">
+                                <p class="headings">Smoke Back Case Mobile Cover Rubber Material</p>
+                                <span class="headings"><b>Rs. <del>150/-</del> 110/- <b class="price">(30%
+                                            off)</b></b></span>
+                            </div>
+                            <div class="ordernow">
+                                <p><button class="btn btn-success ratings">4.3 &star;</button></p>
+                                <span class="orderbtn">
+                                    <button class="btn orders">Order Now</button>
+                                    <button class="btn orders">See Details</button>
+                                </span>
+                            </div>
+                        </div>
+
+
+                        <div class="card">
+                            <div class="cardimg">
+                                <img src="https://i.ibb.co/ygn9YKt/back3.jpg" alt="Printed Case" />
+                            </div>
+                            <div class="cardtxt">
+                                <p class="headings">Printed Rubber Cases with all designs</p>
+                                <span class="headings"><b>Rs. <del>110/-</del> 90/- <b class="price">(Rs. 20
+                                            off)</b></b></span>
+                            </div>
+                            <div class="ordernow">
+                                <p><button class="btn btn-success ratings">3.9 &star;</button></p>
+                                <span class="orderbtn">
+                                    <button class="btn orders">Order Now</button>
+                                    <button class="btn orders">See Details</button>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="cardimg">
+                                <img src="https://i.ibb.co/pLrtzHg/back4.jpg" alt="Cartoon Case" />
+                            </div>
+                            <div class="cardtxt">
+                                <p class="headings">Funky Back Cases with Soft Rubber Material</p>
+                                <span class="headings"><b>Rs. 150/- </b></span>
+                            </div>
+                            <div class="ordernow">
+                                <p><button class="btn btn-success ratings">3.7 &star;</button></p>
+                                <span class="orderbtn">
+                                    <button class="btn orders">Order Now</button>
+                                    <button class="btn orders">See Details</button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fourth Container-->
+
+                <div class="cardcontainer">
+                    <div class="heading">
+                        <h2 class="marg">Ear Buds and Skins</h2>
+                        <h4 class="marg">Best quality Ear Buds With Skins</h4>
+                    </div>
+                    <div class="carddiv">
+                        <div class="card">
+                            <div class="cardimg">
+                                <img src="https://i.ibb.co/NTNjdyh/buds3.jpg" alt="Laptop Skin" />
+                            </div>
+                            <div class="cardtxt">
+                                <p class="headings">Samsung Galaxy Buds Pro 99% Noise Cancellation, Bluetooth Truly
+                                    Wireless
+                                </p>
+                                <span class="headings"><b>Rs. <del>2200/-</del> 2000/- <b class="price">(10%
+                                            off)</b></b></span>
+                            </div>
+                            <div class="ordernow">
+                                <p><button class="btn btn-success ratings">4.6 &star;</button></p>
+                                <span class="orderbtn">
+                                    <button class="btn orders">Order Now</button>
+                                    <button class="btn orders">See Details</button>
+                                </span>
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <div class="cardimg">
+                                <a href="#"> <img src="https://i.ibb.co/cxgPB5b/buds4.jpg" alt="Buds Skin" /></a>
+                            </div>
+                            <div class="cardtxt">
+                                <p class="headings">Mini Earbuds with skin truely wireless</p>
+                                <span class="headings"><b>Rs. <del>450/-</del> 400/- <b class="price">(Rs. 50
+                                            off)</b></b></span>
+                            </div>
+                            <div class="ordernow">
+                                <p><button class="btn btn-success ratings">4.5 &star;</button></p>
+                                <span class="orderbtn">
+                                    <button class="btn orders">Order Now</button>
+                                    <button class="btn orders">See Details</button>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="cardimg">
+                                <a href="#"> <img src="https://i.ibb.co/SmVbW26/buds5.jpg" alt="Buds " /></a>
+                            </div>
+                            <div class="cardtxt">
+                                <p class="headings">WeCool Moonwalk Mini Earbuds with Magnetic Charging Case, </p>
+                                <span class="headings"><b>Rs. <del>400/-</del> 370/- <b class="price">(Rs. 30
+                                            off)</b></b></span>
+                            </div>
+                            <div class="ordernow">
+                                <p><button class="btn btn-success ratings">4.1 &star;</button></p>
+                                <span class="orderbtn">
+                                    <button class="btn orders">Order Now</button>
+                                    <button class="btn orders">See Details</button>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="cardimg">
+                                <a href="#"> <img src="https://i.ibb.co/Wzs16Gx/buds6.jpg" alt="Buds" /></a>
+                            </div>
+                            <div class="cardtxt">
+                                <p class="headings">Gaming Buds with Blue LED Lights at best price</p>
+                                <span class="headings"><b>Rs. <del>470/-</del> 420/- <b class="price">(Rs. 50
+                                            off)</b></b></span>
+                            </div>
+                            <div class="ordernow">
+                                <p><button class="btn btn-success ratings">4.8 &star;</button></p>
+                                <span class="orderbtn">
+                                    <button class="btn orders">Order Now</button>
+                                    <button class="btn orders">See Details</button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <!-- Fourth Container-->
-
-            <div class="cardcontainer">
-                <div class="heading">
-                    <h2 class="marg">Ear Buds and Skins</h2>
-                    <h4 class="marg">Best quality Ear Buds With Skins</h4>
-                </div>
-                <div class="carddiv">
-                    <div class="card">
-                        <div class="cardimg">
-                            <img src="https://i.ibb.co/NTNjdyh/buds3.jpg" alt="Laptop Skin" />
-                        </div>
-                        <div class="cardtxt">
-                            <p class="headings">Samsung Galaxy Buds Pro 99% Noise Cancellation, Bluetooth Truly Wireless
-                            </p>
-                            <span class="headings"><b>Rs. <del>2200/-</del> 2000/- <b class="price">(10%
-                                        off)</b></b></span>
-                        </div>
-                        <div class="ordernow">
-                            <p><button class="btn btn-success ratings">4.6 &star;</button></p>
-                            <span class="orderbtn">
-                                <button class="btn orders">Order Now</button>
-                                <button class="btn orders">See Details</button>
-                            </span>
-                        </div>
-
-                    </div>
-                    <div class="card">
-                        <div class="cardimg">
-                            <a href="#"> <img src="https://i.ibb.co/cxgPB5b/buds4.jpg" alt="Buds Skin" /></a>
-                        </div>
-                        <div class="cardtxt">
-                            <p class="headings">Mini Earbuds with skin truely wireless</p>
-                            <span class="headings"><b>Rs. <del>450/-</del> 400/- <b class="price">(Rs. 50
-                                        off)</b></b></span>
-                        </div>
-                        <div class="ordernow">
-                            <p><button class="btn btn-success ratings">4.5 &star;</button></p>
-                            <span class="orderbtn">
-                                <button class="btn orders">Order Now</button>
-                                <button class="btn orders">See Details</button>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="cardimg">
-                            <a href="#"> <img src="https://i.ibb.co/SmVbW26/buds5.jpg" alt="Buds " /></a>
-                        </div>
-                        <div class="cardtxt">
-                            <p class="headings">WeCool Moonwalk Mini Earbuds with Magnetic Charging Case, </p>
-                            <span class="headings"><b>Rs. <del>400/-</del> 370/- <b class="price">(Rs. 30
-                                        off)</b></b></span>
-                        </div>
-                        <div class="ordernow">
-                            <p><button class="btn btn-success ratings">4.1 &star;</button></p>
-                            <span class="orderbtn">
-                                <button class="btn orders">Order Now</button>
-                                <button class="btn orders">See Details</button>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="cardimg">
-                            <a href="#"> <img src="https://i.ibb.co/Wzs16Gx/buds6.jpg" alt="Buds" /></a>
-                        </div>
-                        <div class="cardtxt">
-                            <p class="headings">Gaming Buds with Blue LED Lights at best price</p>
-                            <span class="headings"><b>Rs. <del>470/-</del> 420/- <b class="price">(Rs. 50
-                                        off)</b></b></span>
-                        </div>
-                        <div class="ordernow">
-                            <p><button class="btn btn-success ratings">4.8 &star;</button></p>
-                            <span class="orderbtn">
-                                <button class="btn orders">Order Now</button>
-                                <button class="btn orders">See Details</button>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
-    </div>
+    
 </body>
+
 <!-- Footer Section-->
 <footer>
     <div id="mainfoot">
@@ -440,6 +486,10 @@
     <hr />
     <h4 id="copyright">&copy; 2022 We r Creators </h4>
 </footer>
+</div>
 
+<script>
+    window.onload = loadCoupon()
 
+</script>
 </html>

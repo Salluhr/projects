@@ -1,18 +1,56 @@
-header{
+
+    header{
     height: 50px;
     width: 100%;
     background-color:#0b222f;
     border-bottom:5px groove #c7e0ee;
     
 }
+
+#mode{
+    height:20px;
+    width:30px;
+    margin-left:50% ;
+    margin-top: 1%;
+
+}
+/*   Using Coupon  Css */
+
+#coupon{
+    
+    height:400px;
+    width:30%;
+    background-color: #305368;
+    z-index:100;
+    margin-left:35%;
+    visibility:hidden;
+    position:fixed;
+    margin-top:2%;
+}
+#coupimg img{
+    height:40%;
+    width:90%;
+    margin-left: 5%;
+}
+#couptxt{
+    text-align: center;
+}
+
+.deal{
+    background-color: #061927 !important;
+    color:#b6d2e3 !important;
+}
+.offer{
+    color:#b6d2e3
+}
 /* Brand div */
-#brand {
+.brand {
     height:50px;
     width:30%;
     float: left;
     margin-left: 2%;
 }
-#brand h1{
+.brand h1{
     font-family:'Times New Roman', Times, serif;
     color: rgb(176, 213, 245);
     font-size: 35px; 
@@ -34,7 +72,7 @@ header{
     font-family:'Times New Roman', Times, serif;
     padding:1px 2px 1px !important;
     float: right;
-    margin-top: 1%;
+    margin-top: -8%;
     margin-left: 2%;
 }
 

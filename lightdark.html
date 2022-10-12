@@ -24,3 +24,77 @@
         <button onClick="changeMode()">Change Mode</button>
     </body>
 </html>
+
+
+                               <!--calculator simple -->
+<!-- <html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <script src="calculator.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <hr/>
+             <div class="panel panel-primary">
+                <div class="panel-heading">Calculator</div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <input class="form-control" id="first"/>
+                    </div>
+
+                    <div class="form-group">
+                        <input class="form-control" id="second"/>
+                    </div>
+                    <hr/>
+                    <p class="output"></p>
+                    <hr/>
+
+                    <button class="btn btn-success" 
+                    onClick="calc('Add')">
+                        <span class="glyphicon glyphicon-plus"></span>
+                    </button>
+                    <button class="btn btn-danger" 
+                     onClick="calc('Sub')">
+                        <span class="glyphicon glyphicon-minus"></span>
+                    </button>
+                </div>
+             </div>
+        </div>
+
+
+    </body>
+</html>  -->
+
+<!--    ( calculator js  file )
+
+ function add(){
+    let a = document.getElementById("first").value;
+    let b = document.getElementById("second").value;
+    let out = Number(a)+Number(b);
+    document.getElementsByClassName('output')[0].innerText=`Sum Of no. is ${out}`
+ }
+   function sub(){
+   let a = document.getElementById("first").value;
+   let b = document.getElementById("second").value;
+  let out = Number(a)-Number(b);
+   document.getElementsByClassName('output')[0].innerText=`Subtraction Of no. is ${out}`
+-->
+
+
+<!--    ( 2nd calculator js  file )
+    function calc(opt){
+       let a = document.getElementById("first").value;
+       let b = document.getElementById("second").value;
+       let out;
+       if(opt=="Add"){
+         out=`Sum of Number is ${Number(a)+ Number(b)}`;
+       }
+       else{
+        out=`Substraction of Number is ${Number(a)- Number(b)}`;
+       }
+       document.getElementsByClassName('output')[0].innerText=out
+ }
+-->
