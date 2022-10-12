@@ -10,31 +10,30 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="coupon.js"></script>
     <style>
-        body{
-          background-color: fff;
-          color:black
+        body {
+            background-color: fff;
+            color: black
         }
-        .mydark{
-          background-color: black;
-          color:white
-        }
-     </style>
-     <script>
-         function changeMode(){
-          let mybody=document.body;
-          mybody.classList.toggle('mydark')
-         }
-     </script>
-</head>
 
+        .mydark {
+            background-color: black;
+            color: white
+        }
+    </style>
+    <script>
+        function changeMode() {
+            let mybody = document.body;
+            mybody.classList.toggle('mydark')
+        }
+    </script>
+</head>
 <Header>
-           
     <div class="brand">
         <h1><b>r Creators</b></h1>
     </div>
     <!-- Light dark mode-->
-    <button onClick="changeMode()" id="mode"><span  class="glyphicon glyphicon-star"></span></button>
-   
+    <button onClick="changeMode()" id="mode"><span class="glyphicon glyphicon-star"></span></button>
+
     <div id="log">
         <button class="btn logbutton">Login</button>
         <button class="btn logbutton">Signup</button>
@@ -42,29 +41,29 @@
 </Header>
 
 <body>
-     <!--  Using coupon -->
+    <!--  Using coupon -->
     <div id="coupon">
         <button onclick="closeCoupon()"> &times;</button>
         <div id="coupimg">
-            <img src="https://i.ibb.co/DVhJ1Zt/images-8.jpg"/>
+            <img src="https://i.ibb.co/DVhJ1Zt/images-8.jpg" />
         </div>
-        
+
         <div id="couptxt">
-           
+
             <h3 class="offer">Offer applicable for all users</h3>
             <p class="offer">
-                Flat 50% off on all mobile accesories, skins and covers  
+                Flat 50% off on all mobile accesories, skins and covers
             </p>
             <h4 class="offer">Limited period offer</h4>
             <div>
-                <button href="#" class="btn btn-info deal">Grab Now</button><br/>
+                <button href="#" class="btn btn-info deal">Grab Now</button><br />
             </div>
-            
+
             <label>Coupon Code : RCR1190</label>
         </div>
     </div>
     <div id="master">
-   
+
         <div id="imgdiv">
             <div id="menubar">
                 <div id="menu">
@@ -421,7 +420,7 @@
 
             </div>
         </div>
-    
+
 </body>
 
 <!-- Footer Section-->
@@ -492,4 +491,5 @@
     window.onload = loadCoupon()
 
 </script>
+
 </html>
