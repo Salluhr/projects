@@ -19,11 +19,15 @@
             background-color: black;
             color: white
         }
+        
+        
     </style>
     <script>
         function changeMode() {
             let mybody = document.body;
-            mybody.classList.toggle('mydark')
+            mybody.classList.toggle('mydark');
+          
+          
         }
     </script>
 </head>
@@ -32,7 +36,8 @@
         <h1><b>r Creators</b></h1>
     </div>
     <!-- Light dark mode-->
-    <button onClick="changeMode()" id="mode"><span class="glyphicon glyphicon-star"></span></button>
+    <button onClick="changeMode()" id="mode" title="Change Mode"><span class="glyphicon glyphicon-adjust
+        "></span></button>
 
     <div id="log">
         <button class="btn logbutton">Login</button>

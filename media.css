@@ -1,8 +1,22 @@
 
-/*
-@media screen and (max-width:1000px){
 
+@media screen and (max-width:1000px){
+#logoup {
+    font-size: 40px;
+    margin-top: 5%;
+    
 }
+#logomd {
+    font-size: 100px;
+    margin-top: -12%;
+   
+}
+#logodn {
+    font-size: 40px;
+    margin-top: 33%;
+   
+}
+/*}
 @media screen and (max-width:900px){
     #brand h1 {
         font-size: 26px;
