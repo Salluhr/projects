@@ -10,10 +10,32 @@ header{
 #mode{
     height:20px;
     width:30px;
-    margin-left:50% ;
-    margin-top: 1%;
-
+    margin-left: 5%;
+    margin-top: -1%
 }
+/* Weather */
+#out{
+    
+    background-color:#0b222f; 
+    color: #ffffff;
+    visibility: hidden;
+    margin-left: -32%;
+    margin-top: -1%;
+}
+#weatherOut{
+    
+
+    color: #ffffff;
+    background-color:#0b222f; 
+    visibility: hidden;
+    margin-left:1% ;
+    margin-top: -1%;
+}
+#weatherbutton{
+    margin-left:47% !important;
+    margin-top: 1% !important;
+}
+
 /*   Using Coupon  Css */
 
 #coupon{
@@ -63,7 +85,7 @@ header{
     width:30%;
     float: right;
     margin-right: 4%;
-    
+    margin-top: 0px
    }
 .logbutton{
     font-size: 20px !important;

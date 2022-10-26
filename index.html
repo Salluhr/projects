@@ -35,10 +35,15 @@
     <div class="brand">
         <h1><b>r Creators</b></h1>
     </div>
+    
+    <!-- Weather-->    
+    <button onClick="geolocation()" id="weatherbutton" title="Weather"><span class="glyphicon glyphicon-cloud"></button>
+        
+        <input id="out" readonly></input>
+        <input id="weatherOut" readonly></input>
     <!-- Light dark mode-->
     <button onClick="changeMode()" id="mode" title="Change Mode"><span class="glyphicon glyphicon-adjust
-        "></span></button>
-
+     "></span></button>
     <div id="log">
         <button class="btn logbutton">Login</button>
         <button class="btn logbutton">Signup</button>
@@ -77,8 +82,8 @@
                     <b><a href="#">Cart</a></b>
                 </div>
                 <div id="search">
-                    <label class="labeltext"><input type="search" placeholder="Search Product Here"
-                            id="inputheight" />Search</label>
+                    <label class="labeltext">  <input type="search" placeholder="Search Product Here"
+                            id="inputheight" />  <span class="glyphicon glyphicon-search"></span></label>
                 </div>
             </div>
             <div id=logocontainer>
