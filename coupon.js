@@ -26,6 +26,7 @@ let x= document.getElementById('out');
                 let long = data.coords.longitude;
                 document.getElementById('out').value= `Lat ${lat} and long ${long}`
                 document.getElementById('out').style.visibility='visible';
+                
                 const url = `https://api.openweathermap.org/data/2.5/forecast/daily?lat=${lat}&lon=${long}&mode=json&units=metric&cnt=5&appid=fbf712a5a83d7305c3cda4ca8fe7ef29`
                 //api calling
                 fetch(url,{method: 'GET'})
